@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Presentation from './components/pages/presentation';
+import AboutMe from './components/pages/aboutMe';
+import Projects from './components/pages/projects';
+import { data_projects } from './data/data_projects';
+
 
 function App() {
+
+  const projects = [...data_projects] //duplicado para que sea infinito
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className=' bg-[#494343] min-h-screen'>
+      <Presentation />
+      <AboutMe />
+      
+      <div className=' mx-auto my-2 w-[90%]'>
+        <h1 className='text-3xl ml-16 my-4'>Proyectos</h1>
+        <div>
+          <div className='flex flex-wrap justify-center '>
+            {projects.map((project, index) => (
+              <Projects project={project} key={index} />
+              
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 

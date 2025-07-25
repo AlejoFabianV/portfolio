@@ -3,7 +3,7 @@ import React from "react";
 const Presentation = () => {
     return (
         <section className=" mx-auto text-center">
-            <h1 className=" text-white pt-[50px] text-5xl">Verhagen Alejo Fabian</h1>
+            <h1 className=" pt-[50px] text-5xl text-[#798777]">Verhagen Alejo Fabian</h1>
             <div className=" mt-4 inline-flex justify-center gap-6">
                 <div>
                     <a href="https://github.com/AlejoFabianV" target="blank">
@@ -11,7 +11,7 @@ const Presentation = () => {
                     </a>
                 </div>
                 <div>
-                    <a href="https://github.com/AlejoFabianV" target="blank">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=verhagenalejo@gmail.com" target="blank">
                         <img className=" h-6 w-6" src="imgs/icons/gmailIcon.png" alt="icon Gmail" />  
                     </a>
                 </div>
@@ -21,7 +21,7 @@ const Presentation = () => {
                     </a>
                 </div>
                 <div>
-                    <a href="https://github.com/AlejoFabianV" target="blank">
+                    <a href="./Verhagen-Alejo-CV.pdf" target="blank">
                         <img className=" h-6 w-6" src="imgs/icons/cvIcon.png" alt="icon file cv" />    
                     </a>
                 </div>
